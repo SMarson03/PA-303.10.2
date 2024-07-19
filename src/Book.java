@@ -1,4 +1,4 @@
-public class Book {
+abstract class Book{
     String title;
     abstract void setTitle(String s);
     String getTitle(){
@@ -6,3 +6,11 @@ public class Book {
     }
 }
 
+class BookList extends Book{
+
+    @Override
+
+    void setTitle(String s){
+        title = s;
+    }
+}
